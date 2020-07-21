@@ -28,6 +28,13 @@
 		
 		<br><br>
 		
+		Operating Systems :
+		Linux <form:checkbox path="operatingSystems" value="Linux"/>
+		Mac OS <form:checkbox path="operatingSystems" value="Mac OS"/>
+		MS windows <form:checkbox path="operatingSystems" value="MS windows"/>
+		
+		<br><br>
+		
 		<input type="submit" value="submit"> <!-- when we submit the data spring MVC calls student.setFirstName and student.setLastName -->
 	
 	</form:form>
