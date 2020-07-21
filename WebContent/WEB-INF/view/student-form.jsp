@@ -17,11 +17,7 @@
 		<br><br>
 		<form:select path="country">
 		
-			<form:option value="Brazil" name="Brazil"/>
-			<form:option value="France" name="France"/>
-			<form:option value="Germany" name="Germany"/>
-			<form:option value="India" name="India"/>
-			<form:option value="Japan" name="Japan"/>
+			<form:options items="${student.countryOptions}"/> <!-- items refer to the collection of the data, Spring will call student.getCountryOptions -->
 			
 		</form:select>
 		<br><br>
