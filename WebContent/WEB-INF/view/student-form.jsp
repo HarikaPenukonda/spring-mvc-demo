@@ -21,7 +21,18 @@
 			
 		</form:select>
 		<br><br>
+		
+		Favourite Language :
+		
+		Java <form:radiobutton path="favouriteLanguage" value="Java"/>
+		Python <form:radiobutton path="favouriteLanguage" value="Python"/>
+		PHP <form:radiobutton path="favouriteLanguage" value="PHP"/>
+		Ruby <form:radiobutton path="favouriteLanguage" value="Ruby"/>
+		
+		<br><br>
+		
 		<input type="submit" value="submit"> <!-- when we submit the data spring MVC calls student.setFirstName and student.setLastName -->
+	
 	</form:form>
 
 </body>
