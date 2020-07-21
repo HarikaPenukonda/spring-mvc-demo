@@ -24,10 +24,7 @@
 		
 		Favourite Language :
 		
-		Java <form:radiobutton path="favouriteLanguage" value="Java"/>
-		Python <form:radiobutton path="favouriteLanguage" value="Python"/>
-		PHP <form:radiobutton path="favouriteLanguage" value="PHP"/>
-		Ruby <form:radiobutton path="favouriteLanguage" value="Ruby"/>
+		<form:radiobuttons path="favouriteLanguage" items="${student.favouriteLanguageOptions}"/>
 		
 		<br><br>
 		
