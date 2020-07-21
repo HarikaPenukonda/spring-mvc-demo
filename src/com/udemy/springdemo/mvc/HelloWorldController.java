@@ -8,19 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/hello") // parent mapping to avoid ambigiuous mapping of same mapping different method
 public class HelloWorldController {
 	
 	
 	// need a controller method to show the initial HTML form
 	
-	@RequestMapping("/showForm")
+	@RequestMapping("/showForm") // sub mappings
 	public String showForm() {
 		return "helloworld-form";
 	}
 	
 	// need a controller method to process the HTML form
 	
-	@RequestMapping("/processForm")
+	@RequestMapping("/processForm") //sub mappings
 	public String processForm(){
 		return "helloworld";
 	}
@@ -28,7 +29,7 @@ public class HelloWorldController {
 	// new controller method to read form data
 	// add data to the model
 	
-	@RequestMapping("/processFormVersionTwo")
+	@RequestMapping("/processFormVersionTwo") //sub mappings
 	public String letsShoutDude(HttpServletRequest request, Model model) {
 		
 		// read the request parameter from the HTML form
