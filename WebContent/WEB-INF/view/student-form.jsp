@@ -15,6 +15,16 @@
 		<br><br>
 		Last Name : <form:input path="lastName"/> <!-- Property of student class, spring MVC calls student.getLastName() -->
 		<br><br>
+		<form:select path="country">
+		
+			<form:option value="Brazil" name="Brazil"/>
+			<form:option value="France" name="France"/>
+			<form:option value="Germany" name="Germany"/>
+			<form:option value="India" name="India"/>
+			<form:option value="Japan" name="Japan"/>
+			
+		</form:select>
+		<br><br>
 		<input type="submit" value="submit"> <!-- when we submit the data spring MVC calls student.setFirstName and student.setLastName -->
 	</form:form>
 
