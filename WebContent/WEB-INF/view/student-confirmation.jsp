@@ -12,5 +12,11 @@
 	<br><br>
 	
 	Country : ${student.country}
+	
+	<br><br>
+	
+	Favourite Language : ${student.favouriteLanguage} <!-- Spring will call student.getFavouriteLanguage() -->
+	
+	<br><br>
 </body>
 </html>
