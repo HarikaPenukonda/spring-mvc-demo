@@ -16,6 +16,8 @@ public class Student {
 	
 	private LinkedHashMap<String,String> favouriteLanguageOptions;
 	
+	private String[] operatingSystems; // we can select multiple operating systems,array of strings
+	
 	// no-arg constructor
 	public Student()
 	{
@@ -75,6 +77,17 @@ public class Student {
 	public LinkedHashMap<String, String> getFavouriteLanguageOptions() {
 		return favouriteLanguageOptions;
 	}
+
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+
+		
+	
 	
 	
 	
