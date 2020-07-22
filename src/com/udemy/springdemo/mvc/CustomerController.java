@@ -39,6 +39,7 @@ public class CustomerController {
 							BindingResult theBindingResult) { // Spring will store results of validation in BindingResult object
 		
 		System.out.println("Last name: | " +theCustomer.getLastName() + " | ");
+		System.out.println("Binding Result: " + theBindingResult);
 		if(theBindingResult.hasErrors()) {
 			return "customer-form";
 		}
